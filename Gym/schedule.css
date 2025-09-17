@@ -1,0 +1,85 @@
+/* Schedule Section */
+.schedule-section {
+    padding: 80px 50px;
+    background-color: var(--dark-bg);
+}
+
+.schedule-section h2 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 60px;
+    color: var(--light-text);
+}
+
+.schedule-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.tab-link {
+    background: none;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.tab-link:hover, .tab-link.active {
+    background-color: var(--primary-color);
+    color: var(--dark-text);
+}
+
+.schedule-content {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    padding: 30px;
+    border: 1px solid var(--border-color);
+}
+
+.tab-content {
+    display: none;
+    animation: fadeIn 0.5s;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.class-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 1.1em;
+}
+
+.class-item:last-child {
+    border-bottom: none;
+}
+
+.class-item span:nth-child(1) {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.class-item span:nth-child(3) {
+    text-align: right;
+    font-style: italic;
+    color: #aaa;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

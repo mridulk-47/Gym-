@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Peak Fitness</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="Gym logo.png" type="image/png">
+</head>
+<body>
+
+    <header class="header">
+        <img src="Gym logo.png" alt="Gym Logo" class="logo">
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="calculator.html">Fitness Calculator</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+        <div class="contact">
+            <a href="#" class="call-now-btn">Call Now</a>
+            <a href="mailto:yummybits2025@gmail.com">Email Us</a>
+        </div>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <div class="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="calculator.html">Fitness Calculator</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="#" class="call-now-btn">Call Now</a>
+        <a href="mailto:yummybits2025@gmail.com">Email Us</a>
+    </div>
+
+    <main class="main-content">
+        <div class="hero-content centered-headline">
+            <h1>Connect With Us</h1>
+        </div>
+        <p>Your fitness journey is important to us. Whether you have a question, feedback, or just want to say hello, we're here for you. Let's build a stronger you, together.</p>
+        
+        <div class="contact-grid">
+            <div class="contact-form">
+                <div class="form-container">
+                    <h2>Send us a Message 📬</h2>
+                    <form id="contactForm" action="https://formspree.io/f/xkgzzrqw" method="POST">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                        <input type="submit" value="Send Message">
+                    </form>
+                </div>
+            </div>
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <ul>
+                    <li><a href="https://www.google.com/maps/search/?api=1&query=NIT+Durgapur+Hall+12" target="_blank"><i class="fas fa-map-marker-alt"></i> <span>HALL -12 , NIT Durgapur , 713209</span></a></li>
+                    <li><a href="tel:+911234567890"><i class="fas fa-phone"></i> <span>+91 123 456 7890</span></a></li>
+                    <li><a href="mailto:yummybits2025@gmail.com"><i class="fas fa-envelope"></i> <span>yummybits2025@gmail.com</span></a></li>
+                </ul>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.434529384624!2d87.291943314977!3d23.51758698470407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f7721da48648b7%3A0x5f8c766634e4f5!2sHall%20of%20Residence%2012%2C%20NIT%20Durgapur!5e0!3m2!1sen!2sin!4v1616161616161" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Peak Fitness. All Rights Reserved.</p>
+    </footer>
+
+    <div id="call-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Contact Us</h2>
+            <div class="call-options">
+                <a href="tel:+911234567890" class="call-option">
+                    <i class="fas fa-phone"></i>
+                    <span>Call by Phone</span>
+                </a>
+                <a href="https://wa.me/911234567890" target="_blank" class="call-option">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+    <script src="nav.js"></script>
+</body>
+</html>
